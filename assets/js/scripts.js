@@ -269,7 +269,31 @@ jQuery(function ($) {
 
 
 
-    
+    /* ======= GOOGLE MAP ======= */
+    $('#world-map-markers').vectorMap({
+        map: 'world_mill_en',
+        scaleColors: ['#C8EEFF', '#68c3a3'],
+        normalizeFunction: 'polynomial',
+        hoverOpacity: 0.7,
+        hoverColor: true,
+        zoomOnScroll: false,
+        markerStyle: {
+          initial: {
+            fill: '#68c3a3',
+            stroke: '#383f47'
+          }
+        },
+        backgroundColor: '#eee',
+        markers: [
+          {latLng: [40.71, -74.00], name: 'New York, USA'},
+          {latLng: [41.90, 12.49], name: 'Rome, Italy'},
+          {latLng: [15.87, 100.99], name: 'Thailand'},
+          {latLng: [19.07, 72.87], name: 'Mumbai, India'},
+          {latLng: [51.50, -0.127], name: 'London, England'},
+          {latLng: [-15.79, -47.88], name: 'Brasília, Brazil'},
+          {latLng: [-33.86, 151.20], name: 'Sydney, Australia'},
+        ]
+    });
 
 
 
